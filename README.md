@@ -46,4 +46,4 @@ requirejs.config({
 
 ### Demo ###
 
-Put it on a web server or run one quickly by using [a simple web server](https://github.com/nodeapps/http-server)
+Take a look [here](http://jpwesselink.github.io/durandal-jade), put it on a web server of your own or run one quickly by using [a simple web server](https://github.com/nodeapps/http-server)
