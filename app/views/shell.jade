@@ -1,0 +1,15 @@
+div
+    .navbar.navbar-fixed-top
+        .navbar-inner
+          a.brand(data-bind='attr: { href: router.navigationModel()[0].hash }') 
+            i.icon-home
+            | &nbsp;
+            span Durandal
+          ul.nav(data-bind='foreach: router.navigationModel')
+            li(data-bind='css: { active: isActive }')
+              a(data-bind='attr: { href: hash }, html: title')
+          .loader.pull-right(data-bind='css: { active: router.isNavigating }')
+            i.icon-spinner.icon-2x.icon-spin
+          form.navbar-search.pull-right(data-bind='submit:search')
+            input.search-query(type='text', placeholder='Search')
+      .container-fluid.page-host(data-bind='router: { transition:\'entrance\', cacheViews:true }')

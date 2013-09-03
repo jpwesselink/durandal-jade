@@ -1,0 +1,26 @@
+section
+    h2(data-bind='html:displayName')
+      blockquote(data-bind='html:description')
+      h3 Features
+      ul(data-bind='foreach: features')
+        li(data-bind='html: $data')
+
+      p
+        | Add jade to requirejs paths config. Just regular, run of the mill 
+        a(href="https://github.com/visionmedia/jade/blob/0.35.0/jade.js") jade
+        
+        | https://github.com/visionmedia/jade/blob/0.35.0/jade.js
+        | Tell requirejs to load jade.js , preferably from the jade github repo
+        | Tell requirejs to load our
+        code jadeViewEngine
+        |  instead of the default 
+        code viewEngine
+        |  in 
+        strong app/main.js
+        |  like so
+      pre
+        | 'jade': '../lib/jade',
+      pre
+        | 'durandal/viewEngine': '../lib/durandal/js/jadeViewEngine'
+        
+        

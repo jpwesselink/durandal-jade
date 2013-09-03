@@ -1,0 +1,7 @@
+section
+    h2(data-bind="html: displayName")
+    .row-fluid
+      ul.thumbnails(data-bind="foreach: images")
+        li
+          a.thumbnail(href="#", data-bind="click:$parent.select")
+            img(style="width: 260px; height: 180px;", data-bind="attr: { src: media.m }")
