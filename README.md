@@ -3,12 +3,12 @@ Jade-Durando proof of concept
 
 ### What it is ###
 
-A simple [Jade](https://github.com/visionmedia/jade) view engine for [Durandal](https://github.com/BlueSpire/Durandal) framework.
-It simply renders jade source into html, which is in turn passed to the regular Durandal view locator. 
+A simple [Jade](https://github.com/visionmedia/jade) view engine for the [Durandal](https://github.com/BlueSpire/Durandal) framework.
+It renders jade source into html, which is in turn passed to the regular Durandal view locator. 
 
 ### What it's not ###
 
-Since it just providers an extra layer on top of the regular view engine, viewmodel template variables are not available in the jade template scope for rendering, however, you can use good old `data-bind` just like you would in regular html templates.
+Since it just provides an extra layer on top of the regular view engine, viewmodel template variables are not available in the jade template scope for rendering, however, you can use good old `data-bind` just like you would in regular html templates.
 
 ``` 
 ul(data-bind="foreach: listOfStuff")
