@@ -1,4 +1,4 @@
-Jade-Durando proof of concept
+Jade-Durandal proof of concept
 ========
 
 ### What it is ###
